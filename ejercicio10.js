@@ -3,7 +3,8 @@
 // Ejemplo de uso de la función:
 
 function removeHTMLTags(param){
-    return param;
+    let regex = /(<([^>]+)>)/ig
+    return param.replace( regex, '' )
 }
 
 const result = removeHTMLTags('<div><span>lorem</span> <strong>ipsum</strong></div>');

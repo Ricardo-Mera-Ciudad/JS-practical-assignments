@@ -4,6 +4,14 @@
 // El segundo parámetro es el número de elementos que deben tener los arrays en los que se divida el array original del primer parámetro.
 // Ejemplo de uso de la función:
 
-// const result = splitArrayIntoChunks([1, 2, 3, 4, 5, 6, 7], 3);
+function splitArrayIntoChunks(arr, chunk) {
+    let newArr = []
+    for (let i = 0; i < arr.length; i += chunk) {
+        newArr.push(arr.slice (i, i + chunk));       
+    }
+    return newArr;
+}
 
-// console.log(result); // [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7 ] ]
+const result = splitArrayIntoChunks([1, 2, 3, 4, 5, 6, 7], 3);
+
+console.log(result); // [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7 ] ]
