@@ -4,7 +4,7 @@
 // Ejemplo de uso de la función:
 
 function toLowercaseKeys(param){
-
+    return Object.keys(param).map(x => x.toLowerCase());
 }
 
 const myObject = { NamE: 'Charles', ADDress: 'Home Street' };

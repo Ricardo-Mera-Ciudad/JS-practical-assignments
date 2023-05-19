@@ -4,6 +4,8 @@
 // El segundo parámetro es el número de elementos que deben tener los arrays en los que se divida el array original del primer parámetro.
 // Ejemplo de uso de la función:
 
+//Este he copiado la idea de StackOverflow 
+
 function splitArrayIntoChunks(arr, chunk) {
     let newArr = []
     for (let i = 0; i < arr.length; i += chunk) {
